@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Pacifico&display=swap');
 
 * {
     margin: 0;
@@ -29,8 +28,9 @@ button {
     border-radius: 10px;
     background-color: yellow;
     color: brown;
-    font-family: 'Pacifico';
+    font-family: 'Pacifico', cursive;
     font-size: 1.5rem;
+    transition: all 0.3s ease-in-out; 
 }
 
 #flowers {
@@ -50,8 +50,8 @@ overflow: hidden;
     background-color: brown;
 
 transform-origin: center center; 
-top: -20px; 
-left: -20px; 
+top: -10px; 
+left: -30px; 
 }
 
 .petal {
@@ -68,11 +68,21 @@ left: 10px;
 
 button:hover {
 cursor: pointer;
-transform: scale(1.1) rotate(10deg);
-  }
 
-  button{
+transform: scale(1.1) rotate(10deg); 
+}
+
+button{
 transition: all 0.3s ease-in-out;
 transform: scale(1);
+}
 
-  }
+.message {
+font-family: 'Lobster', cursive; 
+color: white; 
+font-size: 1rem; 
+position:absolute; 
+top :50%; 
+left :50%; 
+transform :translate(-50%, -50%); 
+}
